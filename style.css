@@ -1,0 +1,1224 @@
+/* work-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/work-sans-v18-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* work-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/work-sans-v18-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* для изменения алгоритма перерасчета высоты и ширины */
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  /* обнуляет значение по умолчанию */
+  outline: 0;
+}
+
+button {
+  border: 0;
+}
+
+@media (max-width:1160px){
+  .content{
+    max-width: 970px;
+  }
+}
+@media (max-width:992px){
+  .content{
+    max-width: 750px;
+  }
+}
+@media (max-width:767px){
+  .content{
+    max-width: none;
+  }
+}
+
+
+.header {
+  padding: 22px 112px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-menu {
+  min-width: 577px;
+  height: 21px;
+}
+
+.ul-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+  color: var(--neutral-900, #14171F);
+
+  /* Body/default */
+  font-size: 18px;
+  font-family: Work Sans;
+  list-style-type: none;
+}
+
+.ul-menu a {
+  text-decoration: none;
+}
+
+/* .skil:nth-child(even){
+  opacity: 0.5;
+} */
+
+.ul-menu>li>a:hover {
+  color: orange;
+}
+
+.hero {
+  background-image: url(img/h.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content {
+  min-height: 646px;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.hero-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 84px;
+  color: #292e3d;
+
+  width: 556px;
+}
+
+.proj {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #3559c7;
+  width: 416px;
+  min-height: 150px;
+}
+
+.proj-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 70px;
+  color: #f0f1f5;
+  text-align: center;
+}
+
+.proj-content {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #f0f1f5;
+  text-align: center;
+}
+
+.proj-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2px;
+}
+
+.proj-button-Back-str {
+  width: 26px;
+  height: 17px;
+}
+
+.proj-button-Back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  width: 207px;
+  height: 40px;
+
+  text-align: center;
+  color: #f0f1f5;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+
+  background: #292e3d;
+}
+
+.proj-button-Next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  width: 207px;
+  height: 40px;
+
+  text-align: center;
+  color: #f0f1f5;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+
+  background: #292e3d;
+}
+
+.skils-content {
+  padding: 60px 0 84px 0;
+}
+
+.skils-top {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #292e3d;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.skils-body {
+  display: flex;
+  justify-content: center;
+}
+
+.skil {
+  width: 292px;
+  height: 197px;
+  background: #ffffff;
+  border: 1.4px solid #e0e3eb;
+  border-radius: 4px;
+  margin: 0px 39px;
+}
+
+.skil-content {
+  padding: 22px 20px 40px 20px;
+}
+
+.skil-head {
+  margin-bottom: 21px;
+}
+
+.skil-body {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #3d445c;
+  margin-bottom: 18px;
+}
+
+.skil-foter {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #858ead;
+}
+
+.history-content {
+  display: flex;
+  justify-content: center;
+}
+
+.history-top {
+  position: relative;
+  background-image: url(img/his.jpg);
+  width: 902px;
+  height: 669px;
+}
+
+.history-cont {
+  display: flex;
+  flex-direction: column;
+
+  background: #2947a9;
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1),
+    0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+  border-radius: 2px;
+
+  width: 500px;
+  height: auto;
+
+  margin: 75px 112px 75px 726px;
+  padding: 50px 60px 60px 40px;
+}
+
+.history-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  margin-bottom: 37px;
+
+  color: #ffffff;
+}
+
+.history-body {
+  width: 388px;
+  height: 207px;
+
+  margin-bottom: 74px;
+}
+
+.history-body-o {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.history-body-t {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.history-bottom {
+  display: flex;
+
+  background: #ffffff;
+  border: 2px solid #2947a9;
+  border-radius: 6px;
+
+  width: 219px;
+  height: 53px;
+}
+
+.history-bottom-text {
+  align-items: baseline;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 16px 20px;
+
+  color: #2947a9;
+}
+
+.services {
+  background: #f6f8f7;
+  margin-top: 202px;
+  padding-bottom: 76px;
+}
+
+.services-content {
+  width: 1124px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-top {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #292e3d;
+  margin-top: 34px;
+  margin-bottom: 36px;
+}
+
+.services-body {
+  margin-bottom: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 48px 98px;
+}
+
+.servis {
+  width: 271px;
+  min-height: 181px;
+  /* min-height для адаптивности */
+  background: #ffffff;
+  box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.servis-color {
+  background: #2947a9;
+}
+
+/* .services-item */
+/* .service */
+/* лишний тэг убрали */
+
+.servis-footer {
+  min-width: 128px;
+  /* min-width для адаптивности */
+  min-height: 23px;
+  /* min-height для адаптивности */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #2947a9;
+}
+
+/* 
+  произойдёт выборка элементов с классом
+  .servis-footer, которые находятся 
+  внутри .servis-content-color
+*/
+.servis-color .servis-footer {
+  color: #fff;
+}
+
+/* заменили тэг servis-body ::before */
+.servis-footer::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #e0e3eb;
+  margin: 20px auto;
+}
+
+.achiev {
+  padding: 103px 0 57px 0;
+}
+
+.achiev-blok {
+  margin: 0 auto;
+  width: 1124px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.achiev-left {
+  width: 641px;
+  min-height: 563px;
+
+  position: relative;
+}
+
+.achiev-item {
+  position: relative;
+
+  display: inline-block;
+  background: #ffffff;
+  /* Neutral/White */
+
+  border: 1px solid #ffffff;
+  /* Shadow 2 */
+
+  box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1),
+    0px 4px 6px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
+
+  padding: 30px;
+  padding-right: 50px;
+}
+
+.achiev-item:nth-child(1) {
+  top: 114px;
+  left: 350px;
+}
+
+.achiev-item:nth-child(2) {
+  top: 210px;
+  left: -150px;
+}
+
+.achiev-item:nth-child(3) {
+  top: 190px;
+  left: 350px;
+}
+
+.achiev-item:nth-child(4) {
+  top: 290px;
+  left: -55px;
+}
+
+/*odd - через один элемент, нечётные*/
+.achiev-item:nth-child(odd) {
+  z-index: 1;
+}
+
+.achiev-item-img {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+
+.achiev-item-img.left-top {
+  right: unset;
+  left: -30px;
+}
+
+.achiev-item-img.right-bottom {
+  top: unset;
+  bottom: -30px;
+  right: -50px;
+}
+
+.achiev-item-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 84px;
+  display: flex;
+  align-items: flex-end;
+
+  /* Neutral/800 */
+
+  color: #292e3d;
+}
+
+.achiev-item-text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* Neutral/500 */
+
+  color: #667299;
+}
+
+.achiev-right {
+  margin-top: 164px;
+  width: 359px;
+}
+
+.achiev-right-title {
+  width: 359px;
+  height: 140px;
+  right: 137px;
+  top: 172px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+
+  color: #2947a9;
+  margin-bottom: 40px;
+}
+
+.achiev-content {
+  /* ширина и высота параграфу не нужно задавать */
+  /* width: 330px; */
+  /* height: 74px; */
+
+  /* работают с position */
+  /* right: 166px; */
+  /* top: 352px; */
+  margin-bottom: 70px;
+}
+
+.achiev-content p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #525b7a;
+}
+
+/* Все элементы за исключением последнего */
+.achiev-content p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* .achiev-right-body {
+  width: 330px;
+  height: 74px;
+  right: 166px;
+  top: 352px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #525b7a;
+  margin-bottom: 70px;
+} */
+
+.achiev-right-buttom {
+  width: 176px;
+  height: 53px;
+  /* right: 320px;
+  top: 493px; */
+
+  background: #2947a9;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achiev-right-buttom-text {
+  width: 98px;
+  height: 21px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* 
+  Padding: если есть отступ между родительским и дочерним элеменом
+  Margin: отступ между сестринскими элементами
+*/
+.consultation {
+  /* margin-top: 107px; */
+  background-image: url(img/consultation.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.consultation-content {
+  /* для адаптива по высоте */
+  padding: 100px 0 70px 0;
+  max-width: 1168px;
+  min-height: 300px;
+  /* margin: 0 auto 0 112px; */
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* прижать к краям дочерние элементы первого уровня */
+  justify-content: space-between;
+}
+
+.consultation-content-top {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+  /* к краю приживаем с помощью flex */
+  /* margin-right: 202px; */
+}
+
+.consultation-top {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+.consultation-body {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.consultation-body a {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.consultation-body a:hover {
+  text-decoration: none;
+}
+
+.consultation-buttom {
+  /* к краю приживаем с помощью flex */
+  /* margin-right: 150px; */
+  min-width: 176px;
+  min-height: 53px;
+  right: 320px;
+  top: 493px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffffff;
+  padding: 5px 20px;
+}
+
+.consultation-buttom-text {
+  width: 192px;
+  height: 21px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.projects {
+  /* убрали слева и справа padding */
+  padding: 57px 0 138px 0;
+}
+
+.projects-blok {
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-left {
+  margin-top: 50px;
+  /* width: 148px; */
+  /* займёт всё свободное пространство */
+  flex: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects-left-top {
+  width: 148px;
+  height: 42px;
+  left: 112px;
+  top: 88px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #292e3d;
+}
+
+.projects-ul {
+  list-style-type: none;
+}
+
+.projects-ul li {
+  text-align: left;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  border-left: 4px solid #fff;
+  padding-left: 16px;
+  margin-bottom: 20px;
+
+  color: #C2C7D6;
+}
+
+.projects-ul li:hover,
+.projects-ul li.active {
+  border-left: 4px solid #2947a9;
+  color: #2947a9;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/* .projects-ul-min {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 16px;
+  margin-top: 20px;
+  gap: 20px;
+  width: 142px;
+  height: 28px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #c2c7d6;
+} */
+.projects-right {
+  margin-top: 139px;
+  /* довольствуется тем, что оставили  */
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 84px 32px;
+  justify-content: flex-end;
+  /* width: 800px; */
+}
+
+.project {
+  position: relative;
+  max-height: 331px;
+}
+
+.project-top {
+  width: 384px;
+  height: 247px;
+
+  background: url(img/project_1.png);
+}
+
+.project-top-one {
+  background: url(img/project_2.png);
+}
+
+.project-top-two {
+  background: url(img/project_3.png);
+}
+
+.project-top-three {
+  background: url(img/project_4.png);
+}
+
+.project-footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  bottom: -50px;
+  min-width: 384px;
+  /* min-height для адаптивной высоты */
+  min-height: 84px;
+  padding: 12px 0;
+
+  background: #2947a9;
+}
+
+.project-p {
+  margin-left: 12px;
+  min-width: 213px;
+  height: 23px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+.project-pp {
+  margin-left: 12px;
+  min-width: 322px;
+  height: 21px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+
+.project-buttom {
+  width: 100%;
+  max-width: 800px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-buttom-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-button-Back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  width: 295px;
+  height: 64px;
+
+  text-align: center;
+  color: #f0f1f5;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  background: #292e3d;
+}
+
+.project-button-Next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  width: 295px;
+  height: 64px;
+
+  text-align: center;
+  color: #f0f1f5;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  background: #292e3d;
+}
+
+.project-buttom-ul>li {
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  background: #f6f8f7;
+  list-style-type: none;
+}
+
+.project-buttom-ul>li:not(:last-child) {
+  margin-right: 16px;
+}
+
+/* выберет все вложенные элемент с классом .project-button-li */
+/* .project-buttom-ul .project-button-li */
+
+/* выберет элементы первого уровня с нужным .project-button-li */
+.project-buttom-ul>.project-button-li {
+  color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  background: #2947a9;
+  list-style-type: none;
+}
+
+.project-button-Back-str {
+  width: 26px;
+  height: 17px;
+}
+
+.form {
+  background: rgba(246, 248, 247, 1);
+  padding: 60px 0;
+}
+
+.form-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 592px;
+}
+
+.form-top {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.form-top-one {
+  font-family: Work Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+
+  margin-bottom: 20px;
+}
+
+.form-top-two {
+  margin-bottom: 5px;
+
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+}
+
+.form-body {
+  width: 100%;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 280px;
+  height: 41px;
+  border-radius: 4px;
+  border: 1px solid rgba(224, 227, 235, 1);
+
+  padding-left: 8px;
+}
+
+.input:focus {
+  border: 1px solid rgb(94, 133, 241);
+}
+
+.select {
+  width: 280px;
+  height: 41px;
+  border-radius: 4px;
+  border: 1px solid rgba(224, 227, 235, 1);
+
+  padding-left: 8px;
+}
+
+.textarea {
+  width: 100%;
+  height: 135px;
+
+  padding: 10px 8px 10px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(224, 227, 235, 1);
+}
+
+.form-row-textarea {
+  margin-bottom: 8px;
+}
+
+.textarea:focus {
+  border: 1px solid rgb(94, 133, 241);
+}
+
+.informacion {
+
+  font-family: Work Sans;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgb(102, 114, 153, 1)
+}
+
+.color-warning {
+  margin-right: 8px;
+
+  color: rgb(243, 45, 10)
+}
+
+.form-row-informacion {
+  margin-bottom: 28px;
+}
+
+.form-row-botton {
+  display: flex;
+  justify-content: center;
+}
+
+.form-button {
+  width: 100%;
+  max-width: 271px;
+  height: 53px;
+
+  padding: 16px 20px 16px 20px;
+
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+
+  background: rgba(41, 71, 169, 1);
+
+}
+
+.footer {
+  padding: 85px 112px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1216px ;
+  height: 200px;
+  
+  margin: 0 auto;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-adress {
+  color: var(--neutral-800, #292E3D);
+  font-size: 20px;
+  font-family: Work Sans;
+  text-transform: capitalize;
+}
+
+.Contacts {
+  color: var(--primary, #2947A9);
+  font-size: 20px;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-variant: all-small-caps;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-button {
+  color: var(--neutral-white, #FFF);
+  text-align: center;
+  font-size: 18px;
+  font-family: Work Sans;
+  font-weight: 600;
+
+  width: 136px;
+  height: 41px;
+  border-radius: 4px;
+  background: var(--secondary, #F9995D);
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 42px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-footer {
+  color: #FFF;
+
+  font-size: 16px;
+  font-family: Work Sans;
+
+  background: var(--primary, #2947A9);
+
+  width: 100%;
+  min-width: 1440px;
+  height: 70px;
+  padding: 26px 972px 0px 112px;
+  align-items: center;
+}
